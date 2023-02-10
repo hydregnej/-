@@ -1,0 +1,491 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  /* Шрифты взятые с google-webfonts-helper */
+/* lato-300 - latin */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''),
+	  url('../fonts/lato-v23-latin-300.woff2') format('woff2'),
+	  /* Chrome 26+, Opera 23+, Firefox 39+ */
+	  url('../fonts/lato-v23-latin-300.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* lato-regular - latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+	  url('../fonts/lato-v23-latin-regular.woff2') format('woff2'),
+	  /* Chrome 26+, Opera 23+, Firefox 39+ */
+	  url('../fonts/lato-v23-latin-regular.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* lato-700 - latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+	  url('../fonts/lato-v23-latin-700.woff2') format('woff2'),
+	  /* Chrome 26+, Opera 23+, Firefox 39+ */
+	  url('../fonts/lato-v23-latin-700.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* lato-900 - latin */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: local(''),
+	  url('../fonts/lato-v23-latin-900.woff2') format('woff2'),
+	  /* Chrome 26+, Opera 23+, Firefox 39+ */
+	  url('../fonts/lato-v23-latin-900.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+body {
+  background: no-repeat radial-gradient( #464646 0%, #101010 77%, #101010 100%);
+  /* height: 100vh;
+  width: 100%; */
+}
+
+  /* html, body {
+    height: 100%;
+  } */
+
+  /* html {
+    height: 100vh;
+    width: 100%;
+  
+    background: radial-gradient( #464646 0%, #101010 77%, #101010 100%);
+    background-image: radial-gradient(#464646 0%, #101010 77%, #101010 100%);
+
+  } */
+  
+  /* Шрифты взятые с google-webfonts-helper */
+
+  body {
+    /* Указываем какой шрифт будет применяться */
+    font-family: 'Lato';
+    /* Стиль шрифта */
+    font-style: normal;
+    /* Размер шрифта */
+    font-size: 18px;
+    /* Задаёт высоту линии текста межстрочный интервал)*/
+    line-height: 1.5;
+    /* Отменяет жирный текст (bold	Делает жирный текст) */
+    font-weight: 400;
+    /* Цвет шрифта */
+    color: white;
+    /* расстояние между словами */
+    word-spacing: 0.2rem;
+    /* Устанавливает высоту элемента */
+    /* height: 100vh; */
+    /* Устанавливает ширину элемента */
+    /* width: 100%; */
+  }
+  
+/* .header {
+  height: 100vh;
+  width: 100%;
+} */
+
+.container {
+  /* расстояние слева и справа */
+  margin: 0px 100px;
+}  
+
+
+  .header-line {
+    padding-top: 50px;
+    /* расположить элементы в линию */
+    display: flex;
+    /* выровнять все элементы по линии главного элемента */
+    align-items: center;
+    /* равное пространство между блоками */
+    justify-content: space-between;
+  }
+
+.header-logo>img {
+  width: 250px;
+}
+
+.nav-item, .num, .phone-text {
+  font-weight: 700;
+
+}
+
+.nav-item {
+  color: rgb(209, 209, 209);
+  margin-right: 50px;
+  /* добавление плавности при наведении */
+  transition: color 0.3s linear;
+}
+
+/* при наведении меняет цвет */
+.nav-item:hover {
+  color: white;
+}
+
+.phone {
+  /* полоска слева от телефона */
+  border-left: 1px solid white;
+  padding-left: 10px;
+  /* высота для полоски. Если это картинка и она съехала, то исправить можно 
+  https://youtu.be/poZf7nGcPIk?t=753 */
+  height: 50px;
+}
+
+.num {
+  color: white;
+}
+
+
+.phone-text {
+  text-align: center;
+}
+
+
+.header-title {
+  font-size: 32px;
+  padding-top: 50px;
+}
+
+
+.header-content-img {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header-content-img img {
+  height: 100%;
+  width: 100%;
+  border: solid 5px;
+}
+
+
+.price {
+  padding-top: 25px;
+}
+
+.price-table table, td {
+	border: 1px solid rgb(255, 255, 255);
+  padding: 12px 12px;
+}
+
+
+.price-table {
+  width: 100%;
+}
+
+
+
+.price-in-table {
+  text-align: right;
+}
+
+h2, caption {
+  font-size: 24px;
+  padding: 10px;
+  font-weight: 700;
+  border: groove #eeeeee 1px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* для того, чтобы видеть границы (на время) */
+.examples {
+  box-shadow: 10px 10px 40px 20px #00000056;
+  margin-top: 25px;
+  /* своя ширина для каждой карточки */
+  /* width: 300px; */
+}
+
+.examples-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding: 10px 0px; */
+  /* display: flex;
+  justify-content: space-around; */
+}
+
+.example {
+  /* margin-left: 5px; */
+  border: groove 1px;
+  /* border-left: groove 1px;
+  border-right: groove 1px; */
+
+}
+
+.exmpl1 {
+  grid-column: 1/2;
+  margin: 0px 2px;
+}
+
+.exmpl2 {
+  grid-column: 2/3;
+  margin: 0px 2px;
+}
+
+.exmpl3 {
+  grid-column: 3/4;
+  margin: 0px 2px;
+}
+
+.example-image {
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* height: 300px; */
+  cursor: pointer;
+  /* max-height: 300px; */
+
+}
+
+.example-image img {
+  /* max-height: 500px; */
+  height: 100%;
+  width: 100%;
+  /* border: solid 5px; */
+}
+
+/* увеличить изображение при наведении */
+ .example-image>img:hover {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale (1.4);
+  border: solid 2px ;
+  /* height: 300px;
+  width: 300px; */
+}
+
+.example-content {
+  padding: 0px 12px;
+  text-align: center;
+  text-align: justify;
+  /* border-left: groove 1px;
+  border-right: groove 1px; */
+}
+
+/* выровнять заголовок по центру */
+.example-title {
+  text-align: center;
+  margin-bottom: 12px;
+  /* width: 300px; */
+  /* text-align: center; */
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* выровнять описание по центру */
+.example-desc {
+  /* width: 300px; */
+  /* text-align: center; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+
+.footer {
+  margin: 30px 0px;
+  padding: 30px 0px;
+  border-top: 1px groove #eeeeee;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  /* display: flex;
+  justify-content: space-around; */
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+}
+
+.location {
+  text-decoration: underline 2px;
+}
+
+.contacts a, p {
+  color: white;
+  font-size: 18px;
+  grid-column: 1/2;
+}
+
+.working, .working-info {
+  margin: 24px 0px;
+}
+
+.maps {
+  grid-column: 2/3;
+}
+
+.maps-blc {
+  height: 100%;
+  width: 100%;
+  /* height: 361px ;
+  width: 600px ; */
+}
+
+/* Работаю над адаптивностью */
+@media (max-width: 1300px) {
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* старый код, сохроанил на всякий случай */
+
+/* работа над адаптивностью сайта */
+/* классы, которые будут меняться, при достижении (max-width: 1500px) */
+/* @media (max-width: 800px) { */
+  /* .header-content-img { */
+    /* картинки идут друг за другом */
+    /* display: block; */
+    /* height: 50%;
+    width: 50%; */
+    /* выровнять по центру */
+    /* margin-left: auto;
+    margin-right: auto;
+  }
+
+  .example-image, .examples-holder, .example-title, .example-desc {
+    display: block;
+    margin: auto;
+    margin: auto;
+  }
+  
+  .example-image {
+    height: 200px;
+  }
+
+  .example-title, .example-desc {
+    width: 190px;
+  }
+
+  .exp-img {
+    width: 190px;
+  }
+
+  .footer {
+    display: block;
+    margin: auto;
+    margin: auto;
+  }
+
+  .maps-blc {
+    width: 190px;
+    height: 150px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* старый код, сохранил на всякий случай */
+
+
+  /* .header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+	background: radial-gradient( #464646 0%, #101010 77%, #101010 100%);
+	height: 2000px;
+  }
+
+
+  .header-image {
+	height: 834px;
+    width: 854px;
+	opacity: 0.7;
+	border-radius: 50px;
+    position: relative;
+  }
+
+  .header-about {
+    grid-column: 3/11;
+    grid-row: 2/7;
+
+  }
+
+  .header-nav {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 270px;
+    background: radial-gradient( #464646 0%, #101010 77%, #101010 100%);
+    padding-left: 45px;
+    line-height: 2.5;
+    opacity: 0.8;
+  }
+ .nav-item {
+    margin-right: 50px;
+    color: #d9d9d9;
+ }
+
+ .header-logo {
+    font-size: 24px;
+ } */
