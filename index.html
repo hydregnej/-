@@ -49,7 +49,7 @@
                 <div class="nav">
                     <a href="#" class="header-price nav-item">Услуги и цены</a>
                     <a href="#" class="header-aboutME nav-item">Обо мне</a>
-                    <a href="#" class="header-contact nav-item">Примеры работ</a>
+                    <a href="#" class="header-example nav-item">Примеры работ</a>
                     <a href="#" class="header-contact nav-item">Контакты</a>
                 </div>
 
@@ -61,7 +61,18 @@
                 </div>
 
                 <div class="burger-menu">
-                    <a href=""><img src="images/burger-menu/burger-menu.png" alt="Бургер-меню"></a>
+                    <!--drop - для того, чтобы сделать выпадающее меню (подробнее https://youtu.be/Bmtu5eNnjK8?t=16860) -->
+                    <div class="drop">
+                        <!-- лучше добавить button, вместо <a></a>, чтобы страница не обновлялась при клике -->
+                        <button href=""><img src="images/burger-menu/burger-menu.png" alt="Бургер-меню"></button>
+                        <!-- это то, что будет доступно при нажатии на кнопку 'burger' -->
+                        <div class="burger-slide">
+                            <a href="#" class="slide-item block">Услуги и цены</a>
+                            <a href="#" class="slide-item block">Обо мне</a>
+                            <a href="#" class="slide-item block">Примеры работ</a>
+                            <a href="#" class="slide-item block">Контакты</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             

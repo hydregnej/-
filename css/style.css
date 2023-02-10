@@ -151,6 +151,24 @@ body {
   color: white;
 }
 
+.block {
+  /* для того, чтобы при нажатии на кнопку - меню распологалось сверху вниз */
+  display: block;
+}
+
+.burger-slide {
+  /* для того, чтобы кнопка была по середине относительно лого */
+  /* position: absolute; */
+  /* для того, чтобы навигация не отображалась */
+  display: none;
+}
+
+.slide-item {
+  color: rgb(209, 209, 209);
+  font-weight: 700;
+}
+
+
 .header-title {
   font-size: 48px;
   padding-top: 50px;
@@ -422,12 +440,24 @@ p {
     display: none;
   }
 
+  /* для того, чтобы сделать выпадающее меню */
+  .drop:hover .burger-slide {
+    display: block;
+    /* для того, чтобы меню бургера выезжало вместе с навбаром, а не выпадало отдельно на страницу с контентом */
+    position: relative;
+    /* background-color: #31313154 ;     */
+  }
+
+  .slide-item:hover {
+    color: white;
+  }
+
 }
 
 @media (max-width: 460px) {
   .burger-menu {
     width: 40px;
-    margin-left: 10px;
+    margin-right: 20px;
   }
 }
 
@@ -479,16 +509,19 @@ p {
 
 @media (max-width: 337px) {
   .container {
-    margin: 0px 10px;
+    margin-left: 10px;
   }
 }
 
 
 @media (max-width: 280px) {
-  .footer {
-    display: block;
-  }
   .header-logo>img {
     width: 150px;
+  }
+}
+
+@media (max-width: 850px){
+  .footer {
+    display: block;
   }
 }
