@@ -113,9 +113,14 @@ body {
   font-family: 'Racing Sans One';
 }
 
+.header-logo>br {
+  display: none;
+}
+
 .header-logo>span {
   border-bottom: white 1px solid;
   line-height: 8px;
+  font-size: 18px;
 }
 
 .header-line {
@@ -172,7 +177,7 @@ body {
 }
 
 .burger-menu img {
-  height: 50px;
+  height: 36px;
   color: white;
 }
 
@@ -389,6 +394,11 @@ p {
 .working-info {
   margin: 24px 0px;
 }
+
+.working-info-minisize{
+  display: none;
+}
+
 .messenger {
   margin-top: 16px;
   display: flex;
@@ -488,7 +498,7 @@ p {
   }
 
   .header-line {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   /* для отображения кнопки "бургер" */
@@ -507,7 +517,10 @@ p {
     display: block;
     /* для того, чтобы меню бургера выезжало вместе с навбаром, а не выпадало отдельно на страницу с контентом */
     position: absolute;
+    top: 108px;
+    right: 9px;
     background: rgba(20, 20, 20, 0.5);
+    line-height: 74px;
   }
 
   .burger-slide {
@@ -579,6 +592,12 @@ p {
 
 @media (max-width: 850px){
   .footer {
+    display: block;
+  }
+}
+
+@media (max-width: 357px) {
+  .working-info-minisize {
     display: block;
   }
 }
