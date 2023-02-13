@@ -196,6 +196,11 @@ body {
   /* position: absolute; */
   /* для того, чтобы навигация не отображалась */
   display: none;
+  background: no-repeat radial-gradient(#464646 0%, #101010 77%, #101010 100%);
+  backdrop-filter: blur(8px);
+  width: 100vw;
+  height: 24vh;
+  transition: all  0.3s linear;
 }
 
 .slide-item {
@@ -494,7 +499,7 @@ p {
 @media (max-width: 1300px) {
 
   .header-title {
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 
   .header-line {
@@ -513,19 +518,23 @@ p {
   }
 
   /* для того, чтобы сделать выпадающее меню */
+
   .drop:hover .burger-slide {
+    transition: all  0.3s linear;
+    right: 0;
     display: block;
     /* для того, чтобы меню бургера выезжало вместе с навбаром, а не выпадало отдельно на страницу с контентом */
     position: absolute;
-    top: 108px;
-    right: 9px;
-    background: rgba(20, 20, 20, 0.5);
-    line-height: 74px;
+    /* background: rgba(20, 20, 20, 0.5); */
+    line-height: 54px;
+    /* размытие сзади */
+    padding: 0px 12px;
+    padding-top: 12px;
+    font-size: 21px;
+    text-align: right;
+    /* background-color: #fff; */
   }
 
-  .burger-slide {
-    margin-bottom: 100px;
-  }
 
   .slide-item:hover {
     color: white;
