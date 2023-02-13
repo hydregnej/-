@@ -57,6 +57,22 @@ html {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+
+/* racing-sans-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Racing Sans One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/racing-sans-one-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/racing-sans-one-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/racing-sans-one-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/racing-sans-one-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/racing-sans-one-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/racing-sans-one-v13-latin-regular.svg#RacingSansOne') format('svg'); /* Legacy iOS */
+}
+
+
 html {
   background: no-repeat radial-gradient(#464646 0%, #101010 77%, #101010 100%);
 }
@@ -89,6 +105,18 @@ body {
   margin: 0px 30px;
 }
 
+.header-logo {
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Racing Sans One';
+}
+
+.header-logo>span {
+  border-bottom: white 1px solid;
+  line-height: 8px;
+}
 
 .header-line {
   padding-top: 50px;
@@ -100,9 +128,6 @@ body {
   justify-content: space-between;
 }
 
-.header-logo>img {
-  width: 250px;
-}
 
 .nav-item,
 .num,
@@ -151,6 +176,11 @@ body {
   color: white;
 }
 
+.burger-button>button {
+  margin: 0;
+  padding: 0;
+}
+
 .block {
   /* для того, чтобы при нажатии на кнопку - меню распологалось сверху вниз */
   display: block;
@@ -174,6 +204,8 @@ body {
   padding-top: 50px;
   text-align: center;
 }
+
+
 
 
 .header-content-img {
@@ -331,7 +363,6 @@ h4 {
   border-top: 1px groove #eeeeee;
   display: grid;
   grid-template-columns: 35% 65%;
-
 }
 
 h3 {
@@ -358,6 +389,21 @@ p {
 .working-info {
   margin: 24px 0px;
 }
+.messenger {
+  margin-top: 16px;
+  display: flex;
+}
+
+.whatsapp img {
+  width: 50px;
+}
+.viber img {
+  width: 50px
+}
+
+.viber {
+  margin-left: 16px;
+}
 
 .maps {
   grid-column: 2/3;
@@ -366,6 +412,14 @@ p {
 .maps-blc {
   height: 100%;
   width: 100%;
+}
+
+.footer-down {
+  
+}
+
+.development {
+    color: white;
 }
 
 /* Работаю над адаптивностью */
@@ -429,6 +483,14 @@ p {
 
 @media (max-width: 1300px) {
 
+  .header-title {
+    margin-top: 100px;
+  }
+
+  .header-line {
+    justify-content: space-around;
+  }
+
   /* для отображения кнопки "бургер" */
   .burger-menu {
     display: block;
@@ -444,8 +506,12 @@ p {
   .drop:hover .burger-slide {
     display: block;
     /* для того, чтобы меню бургера выезжало вместе с навбаром, а не выпадало отдельно на страницу с контентом */
-    position: relative;
-    /* background-color: #31313154 ;     */
+    position: absolute;
+    background: rgba(20, 20, 20, 0.5);
+  }
+
+  .burger-slide {
+    margin-bottom: 100px;
   }
 
   .slide-item:hover {
@@ -461,11 +527,7 @@ p {
   }
 }
 
-@media (max-width: 550px) {
-  .header-logo>img {
-    width: 200px;
-  }
-}
+
 
 @media (max-width: 800px) {
 
@@ -514,11 +576,6 @@ p {
 }
 
 
-@media (max-width: 280px) {
-  .header-logo>img {
-    width: 150px;
-  }
-}
 
 @media (max-width: 850px){
   .footer {
