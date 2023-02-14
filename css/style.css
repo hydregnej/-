@@ -199,7 +199,7 @@ body {
   background: no-repeat radial-gradient(#464646 0%, #101010 77%, #101010 100%);
   backdrop-filter: blur(8px);
   width: 100vw;
-  height: 24vh;
+  height: 43vh;
   transition: all  0.3s linear;
 }
 
@@ -437,7 +437,26 @@ p {
     color: white;
 }
 
+
+
+
+
 /* Работаю над адаптивностью */
+@media (max-width: 414px) {
+  .burger-slide {
+    height: 36vh;
+  }
+}
+
+@media (max-width: 372px) {
+ .burger-slide {
+  height: 69vh;
+ }
+}
+
+
+
+
 @media (max-width: 900px) {
 
   /* блоки в два столбца */
@@ -497,6 +516,10 @@ p {
 }
 
 @media (max-width: 1300px) {
+  .header-content-img {
+    padding-top: 92px;
+  }
+  
 
   .header-title {
     /* margin-top: 100px; */
