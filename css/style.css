@@ -229,8 +229,8 @@ body {
   height: 100%;
   width: 100%;
   border: solid 5px;
-  max-height: 600px;
-  max-width: 700px;
+  max-height: 500px;
+  max-width: 500px;
 }
 
 .header-left-before {
@@ -287,34 +287,52 @@ caption {
 
 .examples-holder {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 
 .example {
-  border: groove 1px;
+  border: groove 1px white;
 
 }
 
 .exmpl1 {
   grid-column: 1/2;
-  margin: 0px 2px;
-  margin-top: 10px;
+  /* margin: 0px 2px;
+  margin-top: 10px; */
+  max-height: 400px;
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .exmpl2 {
   grid-column: 2/3;
-  margin: 0px 2px;
-  margin-top: 10px;
+  /* margin: 0px 2px;
+  margin-top: 10px; */
+    max-height: 400px;
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .exmpl3 {
   grid-column: 3/4;
-  margin: 0px 2px;
-  margin-top: 10px;
+  /* margin: 0px 2px;
+  margin-top: 10px; */
+    max-height: 400px;
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.exmpl4 {
+/* .exmpl4 {
   grid-column: 4/5;
   margin: 0px 2px;
   margin-top: 10px;
@@ -324,14 +342,19 @@ caption {
   grid-column: 5/6;
   margin: 0px 2px;
   margin-top: 10px;
-}
+} */
 
 .example-image {
   cursor: pointer;
-
+  max-height: 400px;
+  max-width: 400px;
+  height: 100%;
+  width: 100%;
 }
 
 .example-image img {
+  max-height: 400px;
+  max-width: 400px;
   height: 100%;
   width: 100%;
 }
@@ -345,19 +368,18 @@ caption {
 
 }
 
-.example-content {
+/* .example-content {
   padding: 0px 12px;
   text-align: center;
   text-align: justify;
 
-}
+} */
 
 /* выровнять заголовок по центру */
-.example-title {
+/* .example-title {
   text-align: center;
   margin-bottom: 12px;
-
-}
+} */
 
 h4 {
   font-size: 24px;
@@ -467,14 +489,16 @@ p {
 
   /* блоки в первый столбец */
   .exmpl1,
-  .exmpl3,
-  .exmpl5 {
+  .exmpl3
+  /* .exmpl5  */
+  {
     grid-column: 1/2;
   }
 
   /* блоки во второй столбец */
-  .exmpl2,
-  .exmpl4 {
+  .exmpl2
+  /* .exmpl4  */
+  {
     grid-column: 2/3;
 
   }
@@ -491,9 +515,10 @@ p {
   /* блоки в одну колонку */
   .exmpl1,
   .exmpl2,
-  .exmpl3,
-  .exmpl4,
-  .exmpl5 {
+  .exmpl3
+  /* .exmpl4, */
+  /* .exmpl5 */
+   {
     grid-column: 1/2;
   }
 }
